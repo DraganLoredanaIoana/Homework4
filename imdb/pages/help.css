@@ -1,0 +1,27 @@
+
+
+  #paragraph {
+  padding-top: 90px;
+  padding-bottom: 120px;
+    text-decoration: none;
+    padding-left: 120px;
+    display: flexbox;
+   font-size: large;
+  
+   padding-bottom: 50px;
+
+
+}
+
+a {
+    color: #FAC70C;
+    text-decoration: none;
+
+}
+
+a>img {
+    height: 20px;
+    display: flexbox;
+    position: relative;
+    padding-top: 10px;
+}

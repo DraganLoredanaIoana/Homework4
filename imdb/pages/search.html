@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popwatch</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="searchStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="containerSearchPage">
+
+        <div class="topnav">
+            <div class="header-left">
+                <a href="home.html"><img src="logo.png" class="logo"></a>
+                <div class="header-right">
+                    <a href="#about">ABOUT</a>
+                    <a class="help" href="#help">HELP</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="#signIn" class="signIn">SIGN IN</a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Search...">
+                <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+            </div>
+        </div>
+        <div id="bandaDiv">
+            <h1>ADVANCED SEARCH</h1>
+            <object id="banda-svg" data="banda.svg" type="image/svg+xml"></object>
+        </div>
+        <div id="moviesSearchedByUser" class="moviesSearchedByUser">
+        </div>
+
+        <br></br>
+
+        <div id="bandaDiv">
+            <h1>SEARCH ANOTHER MOVIES</h1>
+            <object id="banda-svg" data="banda.svg" type="image/svg+xml"></object>
+        </div>
+
+        <br></br>
+
+        <div id="moviesSearchedByGenre" class="moviesSearchedByGenre">
+            <button onclick="displayMoviesListByGenre()">Search by Genre</button>
+            <input id="genreInput" placeholder="Search by Genre">
+        </div>
+
+        <div id="moviesSearchedByLanguage" class="moviesSearchedByLanguage">
+            <button onclick="displayMoviesListByLanguage()">Search by Language</button>
+            <input id="languageInput" placeholder="Search by Language">
+        </div>
+
+        <div id="moviesSearchedByYear" class="moviesSearchedByYear">
+            <button onclick="displayMoviesListByYear()">Search by Year</button>
+            <input id="yearInput" placeholder="Search by Year">
+        </div>
+
+        <div id="moviesSearchedByRating" class="moviesSearchedByRating">
+            <button onclick="displayMoviesListByRating()">Search by Rating</button>
+            <input id="ratingInput" placeholder="Search by Rating">
+        </div>
+
+        <footer class="footer">
+            <!-- <object id="fbAndInsta" data="facebookInstagramSiTwiterInconite.svg" type="image/svg+xml"></object> -->
+        </footer>
+
+    </div>
+    <script src="/models//FetchApi.js"></script>
+    <script src="/views//Movie.js"></script>
+    <script src="/views//search.js"></script>
+</body>
+
+</html>

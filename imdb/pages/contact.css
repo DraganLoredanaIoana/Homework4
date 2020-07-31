@@ -1,0 +1,44 @@
+#paragraph {
+   
+    text-decoration: none;
+    padding-left: 50px;
+    display: flex;
+   font-size: large;
+   padding-top: 120px;
+   padding-bottom: 200px;
+   color: white;
+   position: relative;
+
+}
+
+#paragraph2 {
+   
+    text-decoration: none;
+    padding-left: 50px;
+    display: flex;
+   font-size: large;
+   padding-top: 120px;
+   padding-bottom: 200px;
+   white-space: normal;
+   color: white;
+   position: relative;
+
+}
+
+a {
+    color: #FAC70C;
+    text-decoration: none;
+
+}
+
+a>img {
+    height: 20px;
+    display: flexbox;
+    position: relative;
+    padding-top: 10px;
+}
+span{
+    color: #FAC70C;
+    size: 30px;
+}
+
